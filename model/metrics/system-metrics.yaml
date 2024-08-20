@@ -1,4 +1,13 @@
 groups:
+  # system.* metrics
+  - id: metric.system.uptime
+    type: metric
+    metric_name: system.uptime
+    stability: experimental
+    brief: "Reports the number of seconds that the system has been operational"
+    instrument: counter
+    unit: "s"
+
   # system.cpu.* metrics
   - id: metric.system.cpu.time
     type: metric
